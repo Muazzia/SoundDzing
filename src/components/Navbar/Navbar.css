@@ -38,6 +38,11 @@ nav ul li {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  transition: all ease-in-out;
+}
+
+nav ul li:hover {
+  transform: scale(1.2);
 }
 
 nav ul li a {
