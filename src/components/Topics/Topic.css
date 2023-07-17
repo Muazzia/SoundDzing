@@ -36,6 +36,11 @@
   margin-bottom: 24px;
   margin-left: 20px;
   padding-left: 16px;
+  transition: all 0.5 ease-in-out;
+}
+
+#topics .content ul li:hover {
+  transform: scale(1.2);
 }
 
 #topics .content ul li a {
