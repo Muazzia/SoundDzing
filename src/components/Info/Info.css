@@ -1,0 +1,57 @@
+#info {
+  background: var(--darkGrey-color);
+  padding: 110px 0px 80px 0px;
+}
+
+#info .wrapper {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+#info .students {
+  color: white;
+  text-align: center;
+}
+
+#info .students h3 {
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#info .students p {
+  font-family: Alegreya;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#info .linesvg {
+  position: absolute;
+  left: 0;
+  top: -20px;
+}
+
+/* phone */
+@media screen and (max-width: 720px) {
+  #info .wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  #info .linesvg {
+    top: -60px;
+  }
+
+  #info .students {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

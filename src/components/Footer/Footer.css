@@ -1,0 +1,58 @@
+#footer {
+  padding: 60px 0px;
+  background: black;
+  color: white;
+}
+
+#footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer .container h3 {
+  margin-bottom: 10px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+#footer .container span {
+  color: var(--orange-color);
+}
+
+#footer .container .linkHeading {
+  color: var(--orange-color);
+  font-family: Alegreya;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: norma;
+}
+
+#footer .container .logos {
+  display: flex;
+  gap: 14px;
+}
+
+#footer .container .links {
+  margin-left: 40px;
+}
+
+#footer .container .links ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+#footer .container .links ul li a {
+  color: white;
+}
+
+/* phone */
+
+@media screen and (max-width: 720px) {
+  #footer .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+}

@@ -1,0 +1,123 @@
+#blog {
+  padding: 110px 0px;
+  background: var(--pink);
+}
+
+#blog .wrapper {
+  position: relative;
+}
+
+#blog h2 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+#blog h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 4px;
+  width: 80px;
+  background: var(--yellow--color);
+}
+
+#blog .content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  position: relative;
+  gap: 20px;
+}
+
+#blog .container .top-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  /* float: right; */
+  background: white;
+  color: #000;
+  font-family: Alegreya;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 10px;
+  padding: 3px 13px;
+}
+
+#blog .container {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  transition: all 1 ease;
+}
+
+#blog .container:hover {
+  transform: scale(1.04);
+}
+
+#blog .container img {
+  height: 160px;
+  border-radius: 0px 0px 10px 10px;
+  object-fit: cover;
+  width: 100%;
+}
+
+#blog .container .footer {
+  padding: 10px 24px 16px 5px;
+}
+
+#blog .container .footer p {
+  color: #000;
+  font-family: Alegreya;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#blog .main-btn {
+  display: flex;
+  justify-content: right;
+}
+
+#blog .main-btn a {
+  color: #000;
+  font-family: Alegreya;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1040px) {
+  #blog .content-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #blog .container:nth-child(3) {
+    grid-column: 1/3;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #blog .content-container {
+    grid-template-columns: 1fr;
+  }
+
+  #blog .container:nth-child(3) {
+    grid-column: 1/2;
+  }
+}

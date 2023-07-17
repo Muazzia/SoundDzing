@@ -1,0 +1,41 @@
+:root {
+  --darkGrey-color: #181e1e;
+  --orange-color: #e63946;
+  --pink: #ff6864;
+  --yellow--color: #ffca28;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "sans-sarif";
+}
+
+html {
+  scroll-behavior: smooth;
+  /* margin-top: 120px; */
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* table */
+
+@media screen and (max-width: 1040px) {
+  .wrapper {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .wrapper {
+    max-width: 300px;
+  }
+}
