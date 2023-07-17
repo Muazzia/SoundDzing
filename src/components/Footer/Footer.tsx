@@ -43,7 +43,7 @@ const Footer = () => {
                   <a href="#">muazzia17@gmail.com</a>
                 </li>
                 <li>
-                  <a href="#">+1232323123</a>
+                  <a href="#">+923134856792</a>
                 </li>
               </ul>
             </div>
