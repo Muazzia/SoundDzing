@@ -19,24 +19,55 @@ const Topics = () => {
         <div className="content">
           <ul>
             <li>
-              <a onMouseEnter={() => setImage(frquincies)}>
+              <a
+                style={
+                  image === frquincies ? { color: "red" } : { color: "white" }
+                }
+                onMouseEnter={() => setImage(frquincies)}
+              >
                 What are frequencies?
               </a>
             </li>
             <li>
-              <a onMouseEnter={() => setImage(two1)}> Using Daw </a>
+              <a
+                style={image === two1 ? { color: "red" } : { color: "white" }}
+                onMouseEnter={() => setImage(two1)}
+              >
+                {" "}
+                Using Daw{" "}
+              </a>
             </li>
             <li>
-              <a onMouseEnter={() => setImage(two2)}> Voice Processing </a>
+              <a
+                style={image === two2 ? { color: "red" } : { color: "white" }}
+                onMouseEnter={() => setImage(two2)}
+              >
+                Voice Processing
+              </a>
             </li>
             <li>
-              <a onMouseEnter={() => setImage(two4)}> Mixing </a>
+              <a
+                style={image === two4 ? { color: "red" } : { color: "white" }}
+                onMouseEnter={() => setImage(two4)}
+              >
+                Mixing
+              </a>
             </li>
             <li>
-              <a onMouseEnter={() => setImage(two5)}> Mixing Console </a>
+              <a
+                style={image === two5 ? { color: "red" } : { color: "white" }}
+                onMouseEnter={() => setImage(two5)}
+              >
+                Mixing Console
+              </a>
             </li>
             <li>
-              <a onMouseEnter={() => setImage(two6)}> Mastering </a>
+              <a
+                style={image === two6 ? { color: "red" } : { color: "white" }}
+                onMouseEnter={() => setImage(two6)}
+              >
+                Mastering
+              </a>
             </li>
           </ul>
           <img src={image} alt="" className="mainImage" />
